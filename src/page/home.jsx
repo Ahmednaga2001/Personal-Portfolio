@@ -19,7 +19,7 @@ export default function Home() {
             <TypeAnimation
               sequence={['I am a Full Stack Developer', 1000, 'I am a Front-End Developer', 1000, 'I am a Back-End Developer', 1000]}
               wrapper="span"
-              speed={10}
+              speed={{type: 'keyStrokeDelayInMs', value: 150}}
               style={{
                 fontSize: '3rem',
                 display: 'inline-block',
