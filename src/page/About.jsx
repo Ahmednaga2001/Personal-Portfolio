@@ -57,7 +57,7 @@ export default function About() {
                   variant="h5"
                   sx={{
                     mt: '15px',
-                    boxShadow: 'var(--text-color) 0px 5px 15px;',
+                    boxShadow: 'var(--text-color) 0px 5px 10px;',
                     padding: '10px',
                   }}
                   color="var(--text-color)"
@@ -72,7 +72,7 @@ export default function About() {
                   variant="h5"
                   sx={{
                     mt: '15px',
-                    boxShadow: 'var(--text-color) 0px 5px 15px;',
+                    boxShadow: 'var(--text-color) 0px 5px 10px;',
                     padding: '10px',
                   }}
                   color="var(--text-color)"
@@ -87,7 +87,7 @@ export default function About() {
                   variant="h5"
                   sx={{
                     mt: '15px',
-                    boxShadow: 'var(--text-color) 0px 5px 15px;',
+                    boxShadow: 'var(--text-color) 0px 5px 10px;',
                     padding: '10px',
                   }}
                   color="var(--text-color)"
@@ -102,7 +102,7 @@ export default function About() {
                   variant="h5"
                   sx={{
                     mt: '15px',
-                    boxShadow: 'var(--text-color) 0px 5px 15px;',
+                    boxShadow: 'var(--text-color) 0px 5px 10px;',
                     padding: '10px',
                   }}
                   color="var(--text-color)"
@@ -117,7 +117,7 @@ export default function About() {
                   variant="h5"
                   sx={{
                     mt: '15px',
-                    boxShadow: 'var(--text-color) 0px 5px 15px;',
+                    boxShadow: 'var(--text-color) 0px 5px 10px;',
                     padding: '10px',
                   }}
                   color="var(--text-color)"
