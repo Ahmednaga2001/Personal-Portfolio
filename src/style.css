@@ -1,0 +1,290 @@
+:root{
+    /* --main-color : #2be2d3 ; */
+    --text-color : #eff0f2;
+    --main-color : #10131A;
+    --sec-color : #131E29
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    overflow-x: hidden;
+ 
+}
+h1{
+    font-size: 60px;
+}
+.navbar{
+    background-color: var(--main-color) !important;
+
+}
+.custom-toggler  {
+   background-color: #2eb2d3!important;
+  }
+
+.nav-link , .navbar span{
+    color: var(--text-color) !important;
+    font-size:1.1rem !important;
+    transition: .6s;
+}
+.nav-link{
+    margin-left: 12px;
+}
+.nav-link:hover{
+    color: #2eb2d3 !important;
+}
+
+@media (min-width:768px) {
+    .nav-info{
+        display:flex ;
+        justify-content: center;
+        align-items: center;
+    }   
+}
+
+/* start home*/
+.home{
+    min-height: 100vh;
+    background: url('./asset/ales-nesetril-Im7lZjxeLhg-unsplash.jpg') no-repeat ; 
+    background-size: cover;
+    color:var(--text-color);
+    position: relative;
+}
+.home .home-content{
+  padding: 100px;
+    
+}
+.home-content p {
+    padding-top: 30px;
+    width: 70%;
+    line-height: 25px;
+    
+}
+.home-content .custom-button{
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    padding: 15px 25px;
+    /* background-color: #2eb2d3; */
+    background-image: linear-gradient( #2eb2d3, var(--sec-color));
+    border-radius: 25px;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    margin-top: 30px;
+    cursor: pointer;
+    border: none;
+}
+.home .private-link{
+    text-decoration: none;
+    margin-top: 30px;
+    display: inline-block;
+}
+.home .github-icon , .home .linkedin-icon ,.home .facebook-icon,
+.footer .github-icon , .footer .linkedin-icon ,.footer .facebook-icon
+{
+    font-size: 45px;
+    color: #2eb2d3;
+    margin-left: 10px;
+    transition: .6s;
+}
+.footer .github-icon{
+    margin-left: 0;
+}
+.home .github-icon:hover, .home .linkedin-icon:hover,.home .facebook-icon:hover,
+.footer .github-icon:hover, .footer .linkedin-icon:hover,.footer .facebook-icon:hover{
+    transform: translateY(-10px);
+}
+/* End contact*/
+
+/* start services*/
+.services{
+    background-color: var(--sec-color);
+    padding: 80px 0; 
+}
+.services .box{
+    color: var(--text-color);
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: #2eb2d3 0px 30px 60px -12px inset, #2eb2d3 0px 18px 36px -18px inset;
+}
+.services .box .service-icon{
+    font-size: 40px;
+    color: #2eb2d3;
+}
+.services .box h3{
+    padding-top: 15px;
+}
+.services .box p{
+    padding-top: 15px;
+}
+@media(max-width:1199px) {
+    .services{
+        text-align: center;
+    }
+ 
+}
+@media(max-width:899px) {
+   
+    .services .custom-grid{
+        margin-top: 0;
+    }
+}
+/* End services*/
+
+/* start about*/
+.about{
+    padding: 80px 0;
+    background-color: var(--main-color);
+}
+@media(max-width:1199px) {
+    .about{
+        text-align: center;
+    }
+}
+/* End about*/
+
+/* start project*/
+.project{
+    padding: 80px 0;
+    background-color: #131E29;
+}
+.project .box{
+    padding: 15px;
+    box-shadow: #2eb2d3 0px 30px 60px -12px inset, #2eb2d3 0px 18px 36px -18px inset;
+    height: 220px;
+}
+.project .box img{
+    width: 100%;
+    height: 80%;
+   
+}
+.project .box h4{
+    color: var(--text-color);
+    text-align: center;
+    padding-top: 10px;
+}
+.project .grid-parent{
+    position: relative;
+}
+.project .box-overlay{
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.7s ;
+}
+.project .grid:hover .box-overlay{
+        visibility: visible;
+        opacity: 1;
+        height: 100%;
+        width: 100%;
+}
+.box-overlay a{
+    color: var(--text-color);
+    text-decoration: none;
+    /* background-color: #2eb2d3; */
+    background-image: linear-gradient( #2eb2d3, var(--sec-color));
+    padding: 15px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+/* End Project*/
+
+/* start contact*/
+.contact{
+    padding: 80px 0;
+    background-color: var(--main-color);
+}
+.contact input{
+    width: 100%;
+    padding: 20px;
+    background-color: var(--sec-color);
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+
+
+textarea{
+   width: 100%;
+   height: 250px;
+    padding: 20px;
+    background-color: var(--sec-color);
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    resize: none !important;
+
+}
+/* End contact */
+
+/* start footer */
+.footer{
+    background-color: var(--sec-color);
+    padding: 80px 0;
+}
+.footer .private-links{
+    padding-top: 15px;
+}
+
+.footer-links p:not(:first-child){
+    margin-top: 10px;
+}
+.footer-links p a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+.footer-links p {
+    transition: .6s;
+}
+.footer-links p:hover{
+    transform: translateX(10px);
+}
+.footer-links p:hover a{
+    color:#2eb2d3 ;
+}
+.footer-links-icon{
+    font-size: 1.2rem; 
+     color: #2eb2d3;  
+}
+.footer-info p{
+   color: var(--text-color);
+   font-size: 
+   1.2rem;
+}
+.footer-info-icon{
+    color: #2eb2d3;
+    margin-right: 10px;
+
+}
+.footer-info p:not(:first-child) {
+    margin-top: 30px;
+}
+@media(max-width:991px) {
+    .footer{
+        text-align: center;
+    }
+    .footer-links , .footer-info{
+        display: grid;
+        justify-content: center;
+    }
+    
+}
+/* End footer */
+
+
+
