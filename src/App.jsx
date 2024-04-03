@@ -14,13 +14,12 @@ const App = () => {
     <Router>
       <ResponsiveAppBar />
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/services" element={<Services/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/project" element={<Project/>} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="*" element={<NotFound/>} /> 
-
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>

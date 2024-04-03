@@ -3,7 +3,7 @@ import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 
 // eslint-disable-next-line react/prop-types
-export default function ProjectBox({ name, image, gitHub, index }) {
+export default function ProjectBox({ name, image, gitHub, liveDemo,index }) {
   const ref = useRef(null);
   const inView = useInView(ref);
   const projVariant = {
@@ -39,6 +39,7 @@ export default function ProjectBox({ name, image, gitHub, index }) {
             </div>
             <div className="box-overlay">
               <a href={gitHub}>Visit GitHub</a>
+              <a href={liveDemo}>Live Demo</a>
             </div>
           </motion.div>
         </motion.div>

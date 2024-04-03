@@ -15,11 +15,13 @@ export default function Home() {
     <>
       <div className="home">
         <div className="home-content">
-          <motion.div initial={{ x: '-100%', opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1 }}>
+          {/* initial={{ x: '-100%', opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1 }} */}
+          <div>
             <TypeAnimation
+              className="introduce-home"
               sequence={['I am a Full Stack Developer', 1000, 'I am a Front-End Developer', 1000, 'I am a Back-End Developer', 1000]}
               wrapper="span"
-              speed={{type: 'keyStrokeDelayInMs', value: 150}}
+              speed={{ type: 'keyStrokeDelayInMs', value: 150 }}
               style={{
                 fontSize: '3rem',
                 display: 'inline-block',
@@ -27,22 +29,20 @@ export default function Home() {
               }}
               repeat={Infinity}
             />
-          </motion.div>
-          <motion.p initial={{ x: '-100%', opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1, delay: 1 }}>
+          </div>
+          {/* initial={{ x: '-100%', opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1, delay: 1 }} */}
+          <p>
             Hello! I am Ahmed Naga, a software engineer. I love coding because it lets me build amazing solutions to make a difference in people
             lives. Whether it is creating websites, I am all about making useful and fun things!
-          </motion.p>
-          <motion.a
-            className="custom-button"
-            href={cv}
-            download="Ahmed-Naga-cv"
-            initial={{ x: '-100%', opacity: 0, rotate: 180 }}
+          </p>
+          {/* initial={{ x: '-100%', opacity: 0, rotate: 180 }}
             animate={{ x: 0, opacity: 1, rotate: 0 }}
-            transition={{ duration: 1, delay: 2 }}
-          >
+            transition={{ duration: 1, delay: 2 }} */}
+          <a className="custom-button" href={cv} download="Ahmed-Naga-cv">
             Download Resume
-          </motion.a>
-          <motion.div initial={{ x: '50%', opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1, delay: 2.5 }}>
+          </a>
+          {/* initial={{ x: '50%', opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1, delay: 2.5 }} */}
+          <div>
             <a href="https://github.com/Ahmednaga2001" className="private-link">
               <GitHubIcon className="github-icon" />
             </a>
@@ -52,7 +52,7 @@ export default function Home() {
             <a href="https://www.facebook.com/profile.php?id=100012919321638" className="private-link">
               <FacebookIcon className="facebook-icon" />
             </a>
-          </motion.div>
+          </div>
         </div>
       </div>
       <Services />
