@@ -7,7 +7,6 @@ import Services from './services';
 import About from './About';
 import Project from './project';
 import Contact from './contact';
-import { motion } from 'framer-motion';
 import cv from '../asset/AhmedNaga.pdf';
 
 export default function Home() {

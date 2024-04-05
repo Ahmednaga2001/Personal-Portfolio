@@ -77,7 +77,7 @@ export default function About() {
                   }}
                   color="var(--text-color)"
                 >
-                  Front-end Technologies <span style={{ color: '#2eb2d3' }}>React.js, Redux, HTML5, CSS3, Bootstrap , Material-U</span>
+                  Front-end Technologies <span style={{ color: '#2eb2d3' }}>React.js, Redux, HTML5, CSS3, Bootstrap , Material-UI</span>
                 </Typography>
               </motion.div>
               {/* Front-end/}
