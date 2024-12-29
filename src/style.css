@@ -2,7 +2,7 @@
     /* --main-color : #2be2d3 ; */
     --text-color : #eff0f2;
     --main-color : #10131A;
-    --sec-color : #131E29
+    --sec-color : #131E29;
 }
 *{
     box-sizing: border-box;
@@ -172,59 +172,7 @@ h1{
 }
 /* End about*/
 
-/* start project*/
-.project{
-    padding: 80px 0;
-    background-color: #131E29;
-}
-.project .box{
-    padding: 15px;
-    box-shadow: #2eb2d3 0px 30px 60px -12px inset, #2eb2d3 0px 18px 36px -18px inset;
-    height: 220px;
-    /* position: relative; */
-}
-.project .box img{
-    width: 100%;
-    height: 80%;
-   
-}
-.project .box h4{
-    color: var(--text-color);
-    text-align: center;
-    padding-top: 10px;
-}
-.project .grid-parent{
-    position: relative;
-}
 
-.project .box-overlay{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-visibility: hidden;
-    opacity: 0;
-    transition: .6s;
-}
-.box-overlay a{
-    color: var(--text-color);
-    text-decoration: none;
-    display: block;
-    /* background-color: #2eb2d3; */
-    background-image: linear-gradient( #2eb2d3, var(--sec-color));
-    padding: 10px;
-    border-radius: 25px;
-    text-align: center;
-  
-}
-.box-overlay a:nth-child(2){
-    margin-top: 10px;
-}
-.project .grid-parent:hover .box-overlay{
-visibility: visible;
-    opacity: 1;
-}
-/* End Project*/
 
 /* start contact*/
 .contact{
@@ -311,4 +259,70 @@ textarea{
 /* End footer */
 
 
+/* start project*/
+.project{
+    padding: 80px 0;
+    background-color: #131E29;
+}
+.project .box{
+    padding: 8px;
+    box-shadow: #2eb2d3 0px 30px 60px -12px inset, #2eb2d3 0px 18px 36px -18px inset;
+    height: 400px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* position: relative; */
+}
+.project .box img{
+    width: 100%;
+    height: 60%;
+   
+}
+.box .icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.box .icons a{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: #fff;
+    text-decoration: none;
+}
+.project p{
+    color: #ffffffb3;
+}
+.project .box h4{
+    color: var(--text-color);
+}
 
+
+
+
+/* End Project*/
+
+
+.tecContainer button{
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: #2eb2d3 0px 30px 60px -12px inset, #2eb2d3 0px 18px 36px -18px inset;
+    border-radius: 50px;
+
+    /* background-color: #2eb2d3; */
+}
+
+.tecContainer button:not(:first-child){
+}
+.tecContainer{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+
+}
